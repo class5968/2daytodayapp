@@ -13,14 +13,12 @@
 .typeface_bold {
     font-family: 'NanumSquareNeoBold';
     font-size: 24px;
-    font-weight: 700;
     line-height: 32px;
     color: white;
 }
 .typeface_regular {
     font-family: 'NanumSquareNeo';
     font-size: 24px;
-    font-weight: 400;
     line-height: 32px;
     color: white;
     display: flex;
@@ -28,14 +26,12 @@
 .typeface_deactivated {
     font-family: 'NanumSquareNeo';
     font-size: 24px;
-    font-weight: 400;
     line-height: 32px;
     color: rgba(255, 255, 255, 0.32);
 }
 .typeface_deactivated_crossed {
     font-family: 'NanumSquareNeo';
     font-size: 24px;
-    font-weight: 400;
     line-height: 32px;
     color: rgba(255, 255, 255, 0.32);
     text-decoration-line: line-through;
@@ -43,28 +39,24 @@
 .typeface_title_blue {
     font-family: 'NanumSquareNeoBold';
     font-size: 18px;
-    font-weight: 700;
     line-height: 32px;
     color: #32ade6;
 }
 .typeface_title_orange {
     font-family: 'NanumSquareNeoBold';
     font-size: 18px;
-    font-weight: 700;
     line-height: 32px;
     color: #ff9500;
 }
 .typeface_title_white {
     font-family: 'NanumSquareNeoBold';
     font-size: 18px;
-    font-weight: 700;
     line-height: 32px;
     color: white;
 }
 .typeface_switch {
     font-family: 'NanumSquareNeo';
     font-size: 18px;
-    font-weight: 400;
     line-height: 32px;
     color: white;
 }
