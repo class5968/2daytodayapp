@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2dayToday</title>
+    <link rel=stylesheet href="style.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+</head>
+<body class="background">
+    <div class="container_achivement">
+        <div class="container_date">
+            <div class="typeface_regular">
+                2024년 2월 8일
+            </div>
+            <div class="typeface_regular">
+                토요일
+            </div>
+        </div>
+        <img src="/assets/icons/achievement.svg" style="height: 32px; border: none; margin: 0%;">
+    </div>
+    <div class="container_navbar">
+        <div class="container_today_tomorrow">
+            <div class="button_today">
+                <div class="typeface_bold">
+                    오늘
+                </div>
+            </div>
+            <div class="button_tomorrow">
+                <div class="typeface_deactivated">
+                    내일
+                </div>
+            </div>
+        </div>
+        <div class="button_icon">
+            <img src="/assets/icons/add.svg" style="height: 32px; border: none; margin: 0%;">
+        </div>
+    </div>
+    <div class="container_main">
+        <div class="container_task_orange">
+            <div class="checkmark">
+                <img src="/assets/icons/check.svg" style="height: 32px; border: none; margin: 0%;">
+            </div>
+            <div class="container_task_name" onclick="location.href='tasks_orange.html'">
+                <div class="typeface_bold">
+                    미뤄진 일정명
+                </div>
+                <img src="/assets/icons/more.svg" style="height: 32px; border: none; margin: 0%;">
+            </div>
+        </div>
+        <div class="container_task_blue">
+            <div class="checkmark">
+                <img src="/assets/icons/check.svg" style="height: 32px; border: none; margin: 0%;">
+            </div>
+            <div class="container_task_name" onclick="location.href='tasks_blue.html'">
+                <div class="typeface_bold">
+                    그냥 일정명
+                </div>
+                <img src="/assets/icons/more.svg" style="height: 32px; border: none; margin: 0%;">
+            </div>
+        </div>
+        <div class="container_task_deactivated">
+            <div class="checkmark">
+                <img src="/assets/icons/check_deactivated.svg" style="height: 32px; border: none; margin: 0%;">
+            </div>
+            <div class="container_task_name">
+                <div class="typeface_deactivated_crossed">
+                    완료된 일정명
+                </div>
+                <img src="/assets/icons/more_deactivated.svg" style="height: 32px; border: none; margin: 0%;">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let today = new Date();
+    var day_check = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+    document.getElementById('date').innerText = `${today.getFullYear()}년 ${today.getMonth()+1}월 ${today.getDate()}일`;
+    document.getElementById("day").innerText = day_check[today.getDay()];
+</script>
+</html>
